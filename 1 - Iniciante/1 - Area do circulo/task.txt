@@ -1,0 +1,19 @@
+A fórmula para calcular a área de uma circunferência é definida como A = π . R². Considerando neste problema que π = 3.14159:
+
+Calcule a área utilizando a fórmula fornecida na descrição do problema.
+
+**Input**
+A entrada contém um valor de ponto flutuante (double precision), que é a variável R.
+
+**Output**
+Apresente a mensagem "A=" seguida pelo valor da variável, como no exemplo abaixo, com quatro casas após o ponto decimal. Utilize variáveis do tipo double precision. Como em todos os problemas, não se esqueça de imprimir a quebra de linha ao final do resultado, caso contrário você receberá "Presentation Error".
+
+**Exemplos de Entrada** | **Exemplos de Saída**
+2.00
+A=12.5664
+
+100.64
+A=31819.3103
+
+150.00
+A=70685.7750

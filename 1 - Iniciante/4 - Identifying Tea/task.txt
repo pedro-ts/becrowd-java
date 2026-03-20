@@ -1,0 +1,23 @@
+Blind tea tasting é a habilidade de identificar um chá usando apenas os sentidos de olfato e paladar.
+
+Como parte do Ideal Challenge of Pure-Tea Consumers (ICPC), um programa de TV local é organizado. Durante o programa, um bule cheio de chá é preparado e cinco participantes recebem uma xícara de chá cada. Os participantes devem cheirar, provar e avaliar a amostra para identificar o tipo de chá, que pode ser: (1) white tea; (2) green tea; (3) black tea; ou (4) herbal tea. Ao final, as respostas são verificadas para determinar o número de acertos.
+
+Dado o tipo real do chá e as respostas fornecidas, determine o número de participantes que acertaram a resposta.
+
+Input
+A primeira linha contém um número inteiro T representando o tipo do chá (1 ≤ T ≤ 4).
+A segunda linha contém cinco números inteiros A, B, C, D e E, indicando a resposta dada por cada participante (1 ≤ A, B, C, D, E ≤ 4).
+
+Output
+Imprima uma linha com um número inteiro representando a quantidade de participantes que acertaram a resposta.
+
+Input Samples | Output Samples
+1
+1 2 3 2 1
+
+2
+
+3
+4 1 1 2 1
+
+0

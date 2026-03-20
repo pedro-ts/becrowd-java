@@ -1,0 +1,25 @@
+Leia 2 variáveis, chamadas A e B, e faça a soma dessas duas variáveis, atribuindo o resultado à variável X. Imprima X conforme mostrado abaixo. Imprima a quebra de linha após o resultado, caso contrário você receberá “Presentation Error”.
+
+Input
+O arquivo de entrada conterá 2 números inteiros.
+
+Output
+Imprima a letra X (maiúscula) com um espaço em branco antes e depois do sinal de igual, seguido pelo valor de X, conforme o exemplo abaixo.
+
+Obs.: não se esqueça da quebra de linha ao final.
+
+Samples Input | Samples Output
+10
+9
+
+X = 19
+
+-10
+4
+
+X = -6
+
+15
+-7
+
+X = 8
