@@ -58,25 +58,22 @@ public class Main {
                 // posicao = posicao + 1;
                 // passosPercorrida = passosPercorrida + 1;
                 while (passosPercorrida < passos) {
-                    passosPercorrida++;
-                    posicao++;
-                    System.out.println("[MEIO] INFO = DepoisPrimeiraVez posicao = " + posicao); // ❗
-                    System.out.println("[MEIO] INFO = Depois PrimeiraVez passosPercorrida = " + passosPercorrida); // ❗
-
-                    if (grupoDeHomensVivos.get(posicao) == 0) {
-                        System.out.println("[MEIO] INFO = HOMEM MORTO ENCONTRADO, PULANDO POSIÇÃO"); // ❗
+                    if (!estaMorto(grupoDeHomensVivos, posicao)) { // se o homem na posição não estiver morto
+                        passosPercorrida++;
                         posicao++;
-                        passosPercorrida = passosPercorrida - 1;
+                        if (ehUltimaPosicao(posicao, grupoDeHomensVivos.size())) { // se a posição for maior que o tamanho do grupo, voltar para o inicio
+                            posicao = 0;
+                        }
+                        continue;
+                    } else {
+                        while (estaMorto(grupoDeHomensVivos, posicao)) { // se o homem na posição estiver morto
+                            posicao++;
+                            if (ehUltimaPosicao(posicao, grupoDeHomensVivos.size())) { // se a posição for maior que o tamanho do grupo, voltar para o inicio
+                                posicao = 0;
+                                continue;
+                            }
+                        }
                     }
-                    System.out.println("[MEIO] INFO = Depois do if posicao = " + posicao); // ❗
-                    System.out.println("[MEIO] INFO = Depois do if tamanho = " + (grupoDeHomensVivos.size() - 1)); // ❗
-                    if (posicao > (grupoDeHomensVivos.size() - 1)) {
-                        System.out.println("[MEIO] INFO = FIM DO GRUPO, VOLTANDO PARA O INICIO"); // ❗
-                        posicao = 0; // se parou na ultima possição e não é um homem morto, volta para o inicio
-                        passosPercorrida = passosPercorrida - 1;
-                    }
-                    // se não parou em um homem morto, nem na ultima posição, continua normalmente
-                    // se não parou em um homem morto, nem na ultima posição, continua normalmente
                 }
             }
 
@@ -87,5 +84,17 @@ public class Main {
             System.out.println("[MEIO] GRUPO RESTANTE = " + grupoDeHomensVivos); // ❗
         }
         sc.close();
+    }
+    private static boolean estaMorto(List<Integer> vivos, int posicao) {
+        return vivos.get(posicao) == 0;
+    }
+    private static boolean ehUltimaPosicao(int posicao, int tamanho) {
+        System.out.println("[MEIO] ehUltimaPosicao [POSICAO]= " + posicao); // ❗
+        System.out.println("[MEIO] ehUltimaPosicao [TAMANHO]= " + tamanho); // ❗
+        if (posicao > (tamanho - 1)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
