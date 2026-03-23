@@ -1,0 +1,91 @@
+<mxfile host="65bd71144e">
+    <diagram id="MkZcxxzsLZvQId0vHE0Q" name="Page-1">
+        <mxGraphModel dx="1271" dy="890" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="23" value="" style="whiteSpace=wrap;html=1;shadow=0;glass=1;fillColor=light-dark(#FFFFFF,#FFFF66);opacity=50;strokeColor=default;strokeWidth=10;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+                    <mxGeometry x="-176.5" y="-18" width="880" height="547" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Sistema de pontuação adaptativo formula 1&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=48;fontStyle=1;fontColor=light-dark(#000000,#3333FF);" vertex="1" parent="1">
+                    <mxGeometry x="-203.5" y="-242" width="944" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="input" style="shape=singleArrow;whiteSpace=wrap;html=1;arrowWidth=0.4;arrowSize=0.4;" vertex="1" parent="1">
+                    <mxGeometry x="-151.5" y="5" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=none;html=1;" edge="1" parent="1" source="6" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="G - Numero do Grand Prix (1 até 100)&lt;br&gt;P - Numero de pilotos (1 até 100)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-49.5" y="5" width="225" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Pilotos são identificados com numeros de 1 a P" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="204.5" y="5" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Input" style="shape=singleArrow;whiteSpace=wrap;html=1;arrowWidth=0.4;arrowSize=0.4;" vertex="1" parent="1">
+                    <mxGeometry x="-151.5" y="112.5" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=none;html=1;" edge="1" parent="1" source="10" target="12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Terá mais G linhas(uma linha para cada Grand Prix)&lt;div&gt;Cada linha com P numeros inteiros(um numero pra cada piloto) -&amp;gt; Separada por espaço&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-49.5" y="104" width="225" height="77" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="O primeiro numero representa o numero do pilo que ficou em 1° lugar" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="204.5" y="109.75" width="120" height="65.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Input" style="shape=singleArrow;whiteSpace=wrap;html=1;arrowWidth=0.4;arrowSize=0.4;" vertex="1" parent="1">
+                    <mxGeometry x="-151.5" y="259" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Um numero inteiro S representando o numero do sistema de pontuação&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;br&gt;&lt;/font&gt;Pode ter de 1 sistema de pontuação até 10 sistemas de pontuação cada um dando um valor diferente ou igual de acorodo com a posição final de cada piloto na corrida&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-52.5" y="218" width="225" height="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Input" style="shape=singleArrow;whiteSpace=wrap;html=1;arrowWidth=0.4;arrowSize=0.4;" vertex="1" parent="1">
+                    <mxGeometry x="-141.5" y="682" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="18" target="19">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Teremos S linhas depois" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-52.5" y="425" width="225" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="19" target="20">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Cada uma dessas linha S começa com um numero dizendo até que posição recebe pontos (chamaremos esse numero de K) + espaço" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="204.5" y="413.44" width="218" height="83.12" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Depois desse espaço do K, teremos K numeros inteiros representando a pontuação do 1 colocado até o ultimo que pontua(K) separado por espaço" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="460.5" y="413.44" width="219" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(102, 102, 255));&quot;&gt;Exemplo de entrada&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=24;fontStyle=1;fontColor=light-dark(#000000,#3333FF);" vertex="1" parent="1">
+                    <mxGeometry x="133.5" y="571" width="233" height="41" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 102));&quot;&gt;Entrada&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=24;fontStyle=1;fontColor=light-dark(#000000,#FFFF66);" vertex="1" parent="1">
+                    <mxGeometry x="208" y="-93" width="102" height="41" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Input" style="shape=singleArrow;whiteSpace=wrap;html=1;arrowWidth=0.4;arrowSize=0.4;" vertex="1" parent="1">
+                    <mxGeometry x="-141.5" y="433" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="1 3" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-49.5" y="682" width="225" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="G | P" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="208" y="682" width="225" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="N° Grand Prix | N° Pilotos" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="460.5" y="682" width="225" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="Input" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="43" y="623" width="45" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="Variaveis" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="287.5" y="623" width="66" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="O que é" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="553" y="623" width="61" height="26" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
